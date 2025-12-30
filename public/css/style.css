@@ -1,0 +1,284 @@
+* {
+  margin: 2;
+  padding: 0;
+  font-family: "Arial", sans-serif;
+}
+
+body {
+  background: #f9f9f9;
+  color: #333;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+
+.logo{
+  text-align: center;
+}
+
+/* Nav */
+nav {
+  background: #ffe6f0;
+  padding: 1rem 4rem;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+nav li {
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+nav a {
+  display: inline-block;
+  padding: 0.5rem 1.2rem;
+  border-radius: 999px;
+  text-decoration: none;
+  color: #b83280;
+  font-weight: 500;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+nav a:hover {
+  background: #fbb6ce;
+  color: white;
+}
+
+nav a.active {
+  background: #ec4899;
+  color: white;
+  font-weight: 600;
+}
+
+/*titulos*/
+h1{
+  text-align: center;
+  color: #b83280;
+  text-shadow: #ddd;
+}
+
+h2{
+  color: #4A90E2;
+  text-align: left;
+  margin: 20px auto;
+  max-width: 900px;
+  padding: 15px;
+
+}
+
+.descripcion{
+  text-align: center;
+}
+
+
+/* Formularios */
+form { 
+  background: #ffe6f0;
+  padding: 30px;
+  margin: 20px auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  border: 1px solid #333;
+  max-width: 900px;
+}
+
+form input[type="text"],
+form input[type="date"],
+form input[type="file"],
+form textarea,
+form select,
+form input[type="email"],
+form input[type="password"],
+form textarea {
+  width: 90%;
+  padding: 12px;
+  margin: 8px 0 16px 0;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 15px;
+  transition: border 0.3s, box-shadow 0.3s;
+  resize: none;
+}
+
+form input:focus,
+form textarea:focus {
+  border-color: #4A90E2;
+  box-shadow: 0 0 6px rgba(74,144,226,0.3);
+  outline: none;
+}
+
+/* Botones */
+form button {
+  background: #4A90E2;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  font-size: 15px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+form button:hover {
+  background: #357ABD;
+}
+
+table {
+  margin: 20px auto;
+  border-collapse: collapse;
+  border: 1px solid #ccc;
+  width: auto;
+}
+
+table th, table td {
+  border: 1px solid #ccc;
+  padding: 5px 10px;
+  text-align: left;
+}
+
+
+/*mensajes de error o exito*/
+.errors{
+    color:red;
+    background: #ffe6e6;
+    border: 1px solid #ff9999;
+    padding: 10px;
+    border-radius: 8px;
+    font-size: 14px;
+}
+
+.success{
+  color: green;
+  background: #ffe6e6;
+  border: 1px solid #f2fded;
+  padding: 10px;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+
+/* index */
+.content {
+  max-width: 1000px;
+  margin: 2rem auto;
+  padding: 1rem;
+  text-align: center;
+  display: grid;
+  box-sizing: border-box;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+
+/* Colores diferentes */
+.color1 { background: #fdd0e0; }
+.color2 { background: #fdf7d8; }
+.color3 { background: #d0f5ed; }
+.color4 { background: #d3cdf9; }
+.color5 { background: #fce8d0; }
+.color6 { background: #cae3fa; }
+.color7 { background: #fee6d9; }
+.color8 { background: #d6e2c4; }
+.color9 { background: #e9d7f7; }
+
+
+.card {
+  border-radius: 1rem;
+  overflow: hidden;
+  padding: 1rem;
+  text-align: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card img {
+  width: 100%;
+  border-radius: 0.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.card h3 {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+  color: #ff5cb5;
+}
+
+.card p {
+  font-size: 0.95rem;
+  opacity: 0.9;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+
+/* noticias */
+.noticia {
+  text-align: left;
+  margin: 20px auto;
+  max-width: 900px;
+  padding: 15px;
+}
+
+.noticia img {
+  display: block;
+  margin: 0 auto 10px;
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.noticia title {
+  margin: 10px;
+  color: #4A90E2;
+}
+
+.noticia p {
+  line-height: 1.5;
+}
+
+/*imagen noticias*/
+#noticiaAdmin {
+  max-width:80px;
+}
+
+#noticia {
+  max-width:300px;
+}
+
+
+footer {
+  width: 100%;
+  background-color: rgb(252, 204, 238);
+  padding: 8px 20px;
+  box-shadow: 0 -2px 5px rgba(0,0,0,0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-icons {
+  display: flex;
+  gap: 12px;
+}
+
+.social-icons a img {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+  display: block;
+  opacity: 0.85;
+  transition: opacity 0.3s ease, transform 0.2s ease;
+}
+
+.social-icons a img:hover {
+  opacity: 1;
+  transform: scale(1.1);
+}
